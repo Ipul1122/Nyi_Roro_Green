@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>NyiRoroGreen</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  
+  <style>
+    #map { height: 600px; }
+  </style>
+
+  <!-- =======================================================
+  * Template Name: BizLand
+  * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
+  * Updated: Dec 05 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <img src="assets/img/logo/utpas-logo.png" alt="" width="30px" height="30px">
+          <img src="assets/img/logo/cerdas-berbudi-luhur-logo.png" alt="" width="25px" height="25px">
+          <img src="assets/img/logo/brin_logo.png" alt="" width="25px" height="25px">
+          <img src="assets/img/logo/unesco-logo.png" alt="" width="30px" height="30px">
+        </div>
+  
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">NyiRoroGreen</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <!--<li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
+            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>-->
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1>Selamat Datang <span>di StoryTelling NyiRoroGreen</span></h1>
+            <p>antara Nyai Roro Kidul, Amarah Alam, dan Ancaman Sampah,  Legenda Nyi Roro Kidul bukan sekadar cerita, tetapi sebuah refleksi terhadap bencana yang kita hadapi hari ini. Bagaimana mitos ini berhubungan dengan banjir akibat sampah?</p>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">Mulai Membaca</a>
+              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p><span>Sekilas Tentang</span> <span class="description-title">Nyi Roro Kidul</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-3">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/about.jpg" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-content ps-0 ps-lg-3">
+              <h3>Kisah Nyi Roro Kidul, Sang Ratu Pantai Selatan, </h3>
+              <p class="fst-italic">
+                yang dipercaya memiliki kekuatan untuk menjaga keseimbangan alam di lautan. Legenda ini menyebutkan bahwa siapa pun yang merusak alamnya akan menghadapi murka sang ratu.
+              </p>
+              <ul>
+                <li>
+                  <i class="bi bi-diagram-3"></i>
+                  <div>
+                    <h4>Asal-usul Legenda Nyi Roro Kidul</h4>
+                    <p>Legenda Nyi Roro Kidul berasal dari masa Kerajaan Mataram, di mana ia diyakini sebagai penguasa gaib Laut Selatan. Kepercayaan masyarakat pesisir menyebutkan bahwa ia menjaga keseimbangan alam dan dapat murka jika laut dikotori. Hingga kini, tradisi larung sesaji masih dilakukan sebagai penghormatan agar terhindar dari bencana. Legenda ini juga menjadi pengingat bahwa merusak alam bisa membawa konsekuensi nyata bagi manusia.</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-fullscreen-exit"></i>
+                  <div>
+                    <h4>Relevansi dengan Era Saat Ini</h4>
+                    <p>Legenda Nyi Roro Kidul bukan sekadar mitos, tetapi cerminan dari keseimbangan alam yang harus dijaga. Dalam kepercayaan masyarakat, amarah sang ratu muncul ketika laut dikotori, sejalan dengan realitas saat ini di mana pencemaran dan sampah menyebabkan bencana ekologi. Banjir, abrasi, dan rusaknya ekosistem pesisir adalah bentuk nyata dari “murka alam” akibat ulah manusia. Legenda ini mengingatkan bahwa menjaga lingkungan bukan hanya kewajiban, tetapi juga bentuk harmoni dengan alam.</p>
+                  </div>
+                </li>
+              </ul>
+             
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Featured Services Section -->
+    
+     <!-- Section Title -->
+     <div class="container section-title" data-aos="fade-up">
+      <p><span>Ketika Legenda Bertemu Fakta</span> <span class="description-title"> <br>Bencana Banjir Akibat Sampah</span></p>
+      <br><h5>Seiring waktu, pantai-pantai di Yogyakarta mulai tercemar oleh limbah plastik dan sampah rumah tangga. Akibatnya, banjir dan pencemaran ekosistem semakin parah.</h5>
+    </div><!-- End Section Title -->
+    <section id="featured-services" class="featured-services section">
+
+      <div class="container">
+        <div class="about-content ps-0 ps-lg-3">
+            <div class="row gy-4">
+              
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-item position-relative">
+                        <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+                        <div class="card-content-1">
+                            <h4><a href="" class="stretched-link">Barier di pesisir yang menjengkelkan</a></h4>
+                            <p style="text-align: center;">Sampah di pantai yang ada di Kulonprogo sangat mengganggu wisatawan dan mengancam habitat satwa. Berikut laporan wartawan Harianjogja.com Uli Febriani. 
+                              <br> <br>jogjapolitan.harianjogja.com</p>
+                        </div>
+                    </div>
+                </div><!-- End Service Item -->
+                
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-item position-relative">
+                        <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+                        <div class="card-content-2">
+                            <h4><a href="" class="stretched-link">Bendungan di Yogyakarta Jebol diterjang Banjir</a></h4>
+                            <p style="text-align: center;">Sebuah bendungan di Sungai Progo Yogyakarta jebol pada Minggu, 27 Januari 2025. Bendungan yang berada di wilayah Kecamatan Srandakan, Kabupaten Bantul itu jebol usai hujan deras terjadi dalam beberapa hari terakhir. 
+                              <br><br>metrotvnews.com</p>
+                        </div>
+                    </div>
+                </div><!-- End Service Item -->
+                
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-item position-relative">
+                        <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+                        <div class="card-content-3">
+                            <h4><a href="" class="stretched-link">Hujan Deras, Jalur Utama Yogyakarta-Wates Tergenang Banjir</a></h4>
+                            <p style="text-align: center;">Hujan deras yang mengguyur Daerah Istimewa Yogyakarta membuat jalur utama Yogyakarta-Wates tergenang banjir setinggi sekitar 10-30 cm sehingga menyebabkan tersendatnya arus lalu lintas. 
+                              <br><br>visual.republika.co.id</p>
+                        </div>
+                    </div>
+                </div><!-- End Service Item -->
+                
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-item position-relative">
+                        <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+                        <div class="card-content-4">
+                            <h4><a href="" class="stretched-link">Jogja Darurat Sampah, Pakar UGM Sarankan Edukasi Pemilahan di Masyarakat</a></h4>
+                            <p style="text-align: center;">Pengelolaan sampah dapat disebut sebagai 'pintu masuk' dalam mencapai target pembangunan berkelanjutan karena sampah merupakan isu multisektor yang berdampak pada berbagai aspek di masyarakat dan juga ekonomi. Hal ini disampaikan oleh 
+                              <br><br> Prof.ugm.ac.id</p>
+                        </div>
+                    </div>
+                </div><!-- End Service Item -->
+            </div>
+        </div>
+    </div>
+    
+    
+
+    </section><!-- /Featured Services Section -->
+
+   
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+      <h2 class="infografis-title">INFOGRAFIS</h2>
+      <p class="skill-infografis"><span>Sebaran Kategori Sampah di</span> <span class="description-title">Daerah Istimewa Yogyakarta (DIY) <br> tahun 2022-2024</span></p>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row skills-content skills-animation">
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill"><span>SISA MAKANAN</span> <i class="val">53.85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="53.85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+    
+            <div class="progress">
+              <span class="skill"><span>PLASTIK</span> <i class="val">15.43%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="15.43" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+    
+            <div class="progress">
+              <span class="skill"><span>KERTAS</span> <i class="val">10.43%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="10.43" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+    
+            <div class="progress">
+              <span class="skill"><span>TEKSTIL</span> <i class="val">11.5%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="11.5" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+    
+            <div class="progress">
+              <span class="skill"><span>KAYU/RANTING</span> <i class="val">9.95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="9.95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+          </div>
+    
+          <div class="col-lg-5">
+            <div class="progress">
+              <span class="skill"><span>KACA</span> <i class="val">3.08%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="3.08" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+    
+            <div class="progress">
+              <span class="skill"><span>LAIN-LAIN</span> <i class="val">4.09%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="4.09" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+    
+            <div class="progress">
+              <span class="skill"><span>LOGAM</span> <i class="val">1.01%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="1.01" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+    
+            <div class="progress">
+              <span class="skill"><span>KAIN</span> <i class="val">0.41%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0.41" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+    
+            <div class="progress">
+              <span class="skill"><span>KARET/KULIT</span> <i class="val">0.12%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0.12" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+    
+          </div>
+        </div>
+        <p style="font-style: italic;" >Sumber: harian yogya dan BPS Yogyakarta</p>
+      </div>
+    </section><!-- /Skills Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <p class="skill-infografis"><span>Sebaran Volume Sampah di</span> <span class="description-title">Wilayah Yogyakarta</span></p>
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-journal-richtext"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="3600" data-purecounter-duration="1" data-purecounter-decimals="0" data-purecounter-separator="." class="purecounter"></span>
+              <p>Kawasan Pantai Parangtritis</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-journal-richtext"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="210000" data-purecounter-duration="1" data-purecounter-decimals="0" data-purecounter-separator="." class="purecounter"></span>
+              <p>Kawasan Gunung Kidul</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-journal-richtext"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="1231000" data-purecounter-duration="1" data-purecounter-decimals="0" data-purecounter-separator="." class="purecounter"></span>
+              <p>Sampah Di Daratan</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-journal-richtext"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="360000" data-purecounter-duration="1" data-purecounter-decimals="0" data-purecounter-separator="." class="purecounter"></span>
+              <p>Sampah di TPA</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+        <p>Note: Dihitung per kg</p>
+      </div>
+    </section><!-- /Stats Section -->
+
+    <!-- Clients Section 
+    <section id="clients" class="clients section light-background">
+
+      <div class="container">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+
+    </section> /Clients Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Solusi</h2>
+        <p><span>Check Our</span> <span class="description-title">Solusi</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-recycle"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Pengelolaan Sampah Berbasis 3R</h3>
+              </a>
+              <p>Kurangi (Reduce), Gunakan Kembali (Reuse), dan Daur Ulang (Recycle)</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-recycle"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Bank Sampah dan Daur Ulang</h3>
+              </a>
+              <p style="padding-top: 22px;">Mendorong masyarakat untuk memilah sampah dan memanfaatkan bank sampah sebagai solusi ekonomi dan lingkungan</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-recycle"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Gerakan Bersih Sungai & Pantai</h3>
+              </a>
+              <p style="padding-top: 22px;">Mengadakan aksi gotong royong membersihkan sungai dan pantai secara rutin untuk mengurangi pencemaran</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-recycle"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Edukasi dan Kampanye Kesadaran</h3>
+              </a>
+              <p>Meningkatkan kesadaran masyarakat melalui kampanye, seminar, dan edukasi tentang bahaya sampah bagi lingkungan</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-recycle"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Inovasi Teknologi Pengolahan Sampah</h3>
+              </a>
+              <p>Memanfaatkan teknologi seperti biodigester, incinerator ramah lingkungan, dan Pengolahan sampah organik menjadi kompos </p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-recycle"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Regulasi dan Sanksi Ketat</h3>
+              </a>
+              <p style="padding-top: 22px;">Mendorong kebijakan pengurangan sampah plastik serta menerapkan sanksi bagi pelaku pembuangan sampah sembarangan</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Testimonials Section -->
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>GALERI</h2>
+        <p><span>GALERI SAMPAH&nbsp;</span> <span class="description-title">DI YOGYAKARTA</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">Semua</li>
+            <li data-filter=".filter-app">Organik</li>
+            <li data-filter=".filter-product">Non-Organik</li>
+            <li data-filter=".filter-branding">Limbah</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/galeri/organik/tampilkan-saya-sampah-organik.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Organik</h4>
+                <p>sampah organik kulit pisang</p>
+                <a href="assets/img/galeri/organik/tampilkan-saya-sampah-organik.jpeg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/galeri/non-organik/tampilkan-saya-sampah-non-organik.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Non Organik</h4>
+                <p>Sampah botol plastik</p>
+                <a href="assets/img/galeri/non-organik/tampilkan-saya-sampah-non-organik.jpeg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/galeri/limbah/tampilkan-saya-sampah-limbah-besi-yang-tidak-terpakai.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>limbah</h4>
+                <p>Limbah besi yang berkarat</p>
+                <a href="assets/img/galeri/limbah/tampilkan-saya-sampah-limbah-besi-yang-tidak-terpakai.jpeg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/galeri/organik/tampilkan-saya-sampah-organik-1.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Organik 2</h4>
+                <p>limbah buah buahan dan sayuran</p>
+                <a href="assets/img/galeri/organik/tampilkan-saya-sampah-organik-1.jpeg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/galeri/non-organik/tampilkan-saya-sampah-non-organik-1.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Non Organik 2</h4>
+                <p>Sampah botol botol </p>
+                <a href="assets/img/galeri/non-organik/tampilkan-saya-sampah-non-organik-1.jpeg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/galeri/limbah/tampilkan-saya-sampah-limbah-seperti-baju-hasil-jaitan.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>limbah 2</h4>
+                <p>Baju hasil jaitan</p>
+                <a href="assets/img/galeri/limbah/tampilkan-saya-sampah-limbah-seperti-baju-hasil-jaitan.jpeg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/galeri/organik/tampilkan-saya-sampah-organik-2.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Organik 3</h4>
+                <p>Sampah buah buahan</p>
+                <a href="assets/img/galeri/organik/tampilkan-saya-sampah-organik-2.jpeg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/galeri/non-organik/tampilkan-saya-sampah-non-organik-2.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Non Organik 3</h4>
+                <p>Sampah kaleng bekas</p>
+                <a href="assets/img/galeri/non-organik/tampilkan-saya-sampah-non-organik-2.jpeg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/galeri/limbah/tampilkan-saya-sampah-limbah-seperti-karet-gelang.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>limbah 3</h4>
+                <p>limbah hasil karet</p>
+                <a href="assets/img/galeri/limbah/tampilkan-saya-sampah-limbah-seperti-karet-gelang.jpeg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+
+
+    
+        <!-- <h2 style="text-align:center">Peta Sampah Kecamatan Yogyakarta</h2> -->
+        <h2 style="text-align: center;">Peta Penyebaran Sampah per Kecamatan di Yogyakarta</h2>
+    <!-- MAPS SAMPAH -->
+    <div id="map"></div>
+
+
+
+
+    <!-- Team Section -->
+    <section id="team" class="team section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Team</h2>
+        <p><span>Our</span> <span class="description-title">Team</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container ">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/our-team/ir-asep-surahmat.jpg" class="img-fluid" alt="Ir.Asep Surahmat, M.Kom">
+                <div class="social">
+
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Ir. Asep Surahmat, M.Kom</h4>
+                <span>Universitas Utpadaka Swastika</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/our-team/dr-arief.jpeg" class="img-fluid" alt="Dr. Ir. Arief Wibowo, M.Kom">
+                <div class="social">
+
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Dr. Ir. Arief Wibowo, M.Kom</h4>
+                <span>Universitas Budi Luhur</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="Dr. Fakhriati, M.A.">
+                <div class="social">
+
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Dr. Fakhriati, M.A.</h4>
+                <span>Badan Riset dan Inovasi Nasional</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+ 
+
+
+    <!-- Contact Section -->
+ 
+
+  </main>
+
+
+
+
+  <footer id="footer" class="footer">
+    <div class="container">
+
+      
+      <!-- Copyright section -->
+      <div class="copyright text-center mt-3 ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Team HIBAH MOST UNESCO Universitas Utpadaka Swastika</strong> <span>All Rights Reserved</span></p>
+        <div class="credits mb-3">
+          Designed by <a href="#">Team HIBAH MOST UNESCO UTPAS</a>
+        </div>
+        <div class="row justify-content-center align-items-center mb-4">
+          <div class="col-auto text-center mx-3">
+            <div class="logo-wrapper">
+              <img src="assets/img/logo/utpas-logo.png" alt="UTPAS Logo" class="img-fluid grayscale-logo">
+            </div>
+          </div>
+          <div class="col-auto text-center mx-3">
+            <div class="logo-wrapper">
+              <img src="assets/img/logo/cerdas-berbudi-luhur-logo.png" alt="Camera Logo" class="img-fluid grayscale-logo">
+            </div>
+          </div>
+          <div class="col-auto text-center mx-3">
+            <div class="logo-wrapper">
+              <img src="assets/img/logo/brin_logo.png" alt="Globe Logo" class="img-fluid grayscale-logo">
+            </div>
+          </div>
+          <div class="col-auto text-center mx-3">
+            <div class="logo-wrapper">
+              <img src="assets/img/logo/unesco-logo.png" alt="UNESCO Logo" class="img-fluid grayscale-logo">
+            </div>
+          </div>
+        </div>
+        
+    
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

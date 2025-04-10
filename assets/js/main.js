@@ -249,20 +249,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // MUSIC
 const musicBtn = document.getElementById('musicBtn');
-    const musicIcon = document.getElementById('musicIcon');
-    const bgMusic = document.getElementById('bgMusic');
+const musicIcon = document.getElementById('musicIcon');
+const bgMusic = document.getElementById('bgMusic');
 
-    let isPlaying = false;
+let isPlaying = true;
 
-    musicBtn.addEventListener('click', () => {
-      if (!isPlaying) {
-        bgMusic.play();
-        musicIcon.classList.remove('bi-play-fill');
-        musicIcon.classList.add('bi-pause-fill');
-      } else {
-        bgMusic.pause();
-        musicIcon.classList.remove('bi-pause-fill');
-        musicIcon.classList.add('bi-play-fill');
-      }
-      isPlaying = !isPlaying;
-    });
+// Jalankan musik saat halaman dimuat
+window.addEventListener('load', () => {
+  bgMusic.play().catch((err) => {
+    console.log("Autoplay diblokir oleh browser:", err);
+  });
+});
+
+musicBtn.addEventListener('click', () => {
+  if (isPlaying) {
+    bgMusic.pause();
+    musicIcon.classList.replace('bi-pause-fill', 'bi-play-fill');
+  } else {
+    bgMusic.play();
+    musicIcon.classList.replace('bi-play-fill', 'bi-pause-fill');
+  }
+  isPlaying = !isPlaying;
+});

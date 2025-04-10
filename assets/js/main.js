@@ -249,25 +249,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // MUSIC
 const musicBtn = document.getElementById('musicBtn');
-const musicIcon = document.getElementById('musicIcon');
-const bgMusic = document.getElementById('bgMusic');
+    const musicIcon = document.getElementById('musicIcon');
+    const bgMusic = document.getElementById('bgMusic');
 
-let isPlaying = true;
+    let isPlaying = false;
 
-// Jalankan musik saat halaman dimuat
-window.addEventListener('load', () => {
-  bgMusic.play().catch((err) => {
-    console.log("Autoplay diblokir oleh browser:", err);
-  });
-});
+    // Jalankan musik saat interaksi pertama (klik di mana saja)
+    const startMusicOnFirstClick = () => {
+      if (!isPlaying) {
+        bgMusic.play();
+        musicIcon.classList.replace('bi-play-fill', 'bi-pause-fill');
+        isPlaying = true;
+      }
+      document.removeEventListener('click', startMusicOnFirstClick); // hanya sekali
+    };
 
-musicBtn.addEventListener('click', () => {
-  if (isPlaying) {
-    bgMusic.pause();
-    musicIcon.classList.replace('bi-pause-fill', 'bi-play-fill');
-  } else {
-    bgMusic.play();
-    musicIcon.classList.replace('bi-play-fill', 'bi-pause-fill');
-  }
-  isPlaying = !isPlaying;
-});
+    document.addEventListener('click', startMusicOnFirstClick);
+
+    // Kontrol toggle tombol
+    musicBtn.addEventListener('click', (e) => {
+      e.stopPropagation(); // mencegah trigger global click
+      if (isPlaying) {
+        bgMusic.pause();
+        musicIcon.classList.replace('bi-pause-fill', 'bi-play-fill');
+      } else {
+        bgMusic.play();
+        musicIcon.classList.replace('bi-play-fill', 'bi-pause-fill');
+      }
+      isPlaying = !isPlaying;
+    });

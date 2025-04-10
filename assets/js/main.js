@@ -247,34 +247,69 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 1500); // Tunggu sedikit agar PureCounter selesai menghitung
 });
 
-// MUSIC
+// JavaScript
 const musicBtn = document.getElementById('musicBtn');
-    const musicIcon = document.getElementById('musicIcon');
-    const bgMusic = document.getElementById('bgMusic');
+const musicIcon = document.getElementById('musicIcon');
+const bgMusic = document.getElementById('bgMusic');
 
-    let isPlaying = false;
+let isPlaying = true; // Default state adalah playing karena autoplay
 
-    // Jalankan musik saat interaksi pertama (klik di mana saja)
-    const startMusicOnFirstClick = () => {
-      if (!isPlaying) {
-        bgMusic.play();
-        musicIcon.classList.replace('bi-play-fill', 'bi-pause-fill');
-        isPlaying = true;
-      }
-      document.removeEventListener('click', startMusicOnFirstClick); // hanya sekali
-    };
-
-    document.addEventListener('click', startMusicOnFirstClick);
-
-    // Kontrol toggle tombol
-    musicBtn.addEventListener('click', (e) => {
-      e.stopPropagation(); // mencegah trigger global click
-      if (isPlaying) {
-        bgMusic.pause();
-        musicIcon.classList.replace('bi-pause-fill', 'bi-play-fill');
-      } else {
-        bgMusic.play();
-        musicIcon.classList.replace('bi-play-fill', 'bi-pause-fill');
-      }
-      isPlaying = !isPlaying;
+// Coba play musik secara otomatis saat halaman dimuat
+window.addEventListener('load', () => {
+  // Putar musik setelah halaman dimuat
+  const playPromise = bgMusic.play();
+  
+  if (playPromise !== undefined) {
+    playPromise.then(() => {
+      // Autoplay berhasil!
+      bgMusic.muted = false; // Unmute audio setelah berhasil diputar
+      musicIcon.classList.replace('bi-play-fill', 'bi-pause-fill');
+    }).catch(error => {
+      // Autoplay gagal, tunggu interaksi pengguna
+      isPlaying = false;
+      console.log("Autoplay gagal, tunggu interaksi pengguna");
     });
+  }
+});
+
+
+// MUSIC
+// Fungsi untuk memainkan musik setelah interaksi pertama
+const startMusicOnUserInteraction = () => {
+  bgMusic.muted = false; // Unmute audio
+  bgMusic.play()
+    .then(() => {
+      isPlaying = true;
+      musicIcon.classList.replace('bi-play-fill', 'bi-pause-fill');
+    })
+    .catch(error => {
+      console.log("Gagal memainkan audio:", error);
+    });
+  
+  // Hapus semua event listener setelah berhasil
+  document.removeEventListener('click', startMusicOnUserInteraction);
+  document.removeEventListener('touchstart', startMusicOnUserInteraction);
+  document.removeEventListener('keydown', startMusicOnUserInteraction);
+  document.removeEventListener('scroll', startMusicOnUserInteraction);
+};
+
+// Tambahkan event listener untuk berbagai jenis interaksi
+document.addEventListener('click', startMusicOnUserInteraction);
+document.addEventListener('touchstart', startMusicOnUserInteraction);
+document.addEventListener('keydown', startMusicOnUserInteraction);
+document.addEventListener('scroll', startMusicOnUserInteraction);
+
+// Kontrol toggle tombol
+musicBtn.addEventListener('click', (e) => {
+  e.stopPropagation(); // mencegah trigger global click
+  
+  if (isPlaying) {
+    bgMusic.pause();
+    musicIcon.classList.replace('bi-pause-fill', 'bi-play-fill');
+  } else {
+    bgMusic.play();
+    musicIcon.classList.replace('bi-play-fill', 'bi-pause-fill');
+  }
+  
+  isPlaying = !isPlaying;
+});

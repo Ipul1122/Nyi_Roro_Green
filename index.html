@@ -4,12 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>NyiRoroGreen</title>
+  <title>Nyi Roro Jonggreen</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/logo/utpas-logo.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -28,11 +32,12 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   
   <style>
-    #map { height: 600px; }
+    #mapid { height: 700px; width: 100%; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    h2 { text-align: center; padding: 20px 0; }
   </style>
 
   <!-- =======================================================
@@ -67,7 +72,7 @@
         <a href="index.html" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">NyiRoroGreen</h1>
+          <h1 class="sitename">Nyi Roro Jonggreen</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -176,11 +181,17 @@
 
     <!-- Featured Services Section -->
     
-     <!-- Section Title -->
-     <div class="container section-title" data-aos="fade-up">
-      <p><span>Ketika Legenda Bertemu Fakta</span> <span class="description-title"> <br>Bencana Banjir Akibat Sampah</span></p>
-      <br><h5>Seiring waktu, pantai-pantai di Yogyakarta mulai tercemar oleh limbah plastik dan sampah rumah tangga. Akibatnya, banjir dan pencemaran ekosistem semakin parah.</h5>
+    <div class="container section-title d-flex flex-column mt-3" data-aos="fade-up">
+      <p>
+        <span>Ketika Legenda Bertemu Fakta</span>
+        <span class="description-title"> <br>Bencana Banjir Akibat Sampah</span>
+      </p>
+          <div class="col" style="text-align: justify;">Seiring waktu, pantai-pantai di Yogyakarta mulai tercemar oleh limbah plastik dan sampah rumah tangga. Akibatnya, banjir dan pencemaran ekosistem semakin parah.
+            Jika pantai-pantai kita tidak dijaga kebersihannya dari sampah, maka tidak hanya Nyi Roro Jonggreen yang akan murka. Anak cucu kita kelak akan lebih tersiksa karena bumi yang diwariskan tidak dalam kondisi yang terbaik….
+      </div>
     </div><!-- End Section Title -->
+    
+    
     <section id="featured-services" class="featured-services section">
 
       <div class="container">
@@ -326,49 +337,94 @@
     </section><!-- /Skills Section -->
 
     <!-- Stats Section -->
-    <section id="stats" class="stats section">
+<section id="stats" class="stats section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <p class="skill-infografis">
+      <span>Sebaran Volume Sampah di</span>
+      <span class="description-title">Wilayah Yogyakarta</span>
+    </p>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <p class="skill-infografis"><span>Sebaran Volume Sampah di</span> <span class="description-title">Wilayah Yogyakarta</span></p>
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-journal-richtext"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="3600" data-purecounter-duration="1" data-purecounter-decimals="0" data-purecounter-separator="." class="purecounter"></span>
-              <p>Kawasan Pantai Parangtritis</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-journal-richtext"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="210000" data-purecounter-duration="1" data-purecounter-decimals="0" data-purecounter-separator="." class="purecounter"></span>
-              <p>Kawasan Gunung Kidul</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-journal-richtext"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="1231000" data-purecounter-duration="1" data-purecounter-decimals="0" data-purecounter-separator="." class="purecounter"></span>
-              <p>Sampah Di Daratan</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-journal-richtext"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="360000" data-purecounter-duration="1" data-purecounter-decimals="0" data-purecounter-separator="." class="purecounter"></span>
-              <p>Sampah di TPA</p>
-            </div>
-          </div><!-- End Stats Item -->
-
+    <div class="row gy-4">
+      <!-- Stats Item 1 -->
+      <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+        <div class="stats-item text-center p-4 rounded shadow-sm w-100" style="background-color: #f7fdfc;">
+          <div class="icon-wrapper mb-3">
+            <i class="bi bi-journal-richtext fs-2 text-white bg-success p-2 rounded-circle"></i>
+          </div>
+          <h3 class="fw-bold mb-2" >
+            <span class="purecounter" 
+                data-purecounter-start="0" 
+                data-purecounter-end="2.4"
+                data-purecounter-duration="1" 
+                data-purecounter-decimals="1">
+            </span> Ton
+          </h3>
+          <p class="mb-0">Kawasan Pantai Parangtritis</p>
+          <a href="https://jogjapolitan.harianjogja.com/read/2024/04/15/511/1171300/sampah-di-pantai-parangtritis-capai-36-ton-per-hari-melonjak-selama-lebaran" target="_blank">Baca Selengkapnya</a>
         </div>
-        <p>Note: Dihitung per kg</p>
       </div>
-    </section><!-- /Stats Section -->
+
+      <!-- Stats Item 2 -->
+      <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+        <div class="stats-item text-center p-4 rounded shadow-sm w-100" style="background-color: #f7fdfc;">
+          <div class="icon-wrapper mb-3">
+            <i class="bi bi-journal-richtext fs-2 text-white bg-success p-2 rounded-circle"></i>
+          </div>
+          <h3 class="fw-bold mb-2">
+            <span class="purecounter" 
+                data-purecounter-start="0" 
+                data-purecounter-end="48" 
+                data-purecounter-duration="1">
+            </span> Ton
+          </h3>
+          <p class="mb-0">Kawasan Pantai Gunungkidul</p>
+          <a href="https://jogjapolitan.harianjogja.com/read/2024/01/26/513/1162822/kelola-sampah-di-kawasan-pantai-gunungkidul-bangun-4-tps3r-baru" target="_blank">Baca Selengkapnya</a>
+        </div>
+      </div>
+
+      <!-- Stats Item 3 -->
+      <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+        <div class="stats-item text-center p-4 rounded shadow-sm w-100" style="background-color: #f7fdfc;">
+          <div class="icon-wrapper mb-3">
+            <i class="bi bi-journal-richtext fs-2 text-white bg-success p-2 rounded-circle"></i>
+          </div>
+          <h3 class="fw-bold mb-2">
+            <span class="purecounter" 
+                data-purecounter-start="0" 
+                data-purecounter-end="600" 
+                data-purecounter-duration="1">
+              </span> Ton
+          </h3>
+          <p class="mb-0">Sampah di Daratan Yogyakarta</p>
+          <a href="https://jogjapolitan.harianjogja.com/read/2024/06/24/510/1179046/pemda-diy-sebut-timbunan-sampah-di-kota-jogja-mencapai-5000-ton-lebih#:~:text=Pemda%20DIY%20Sebut%20Timbunan%20Sampah%20di%20Kota%20Jogja%20Mencapai%205.000%20Ton%20Lebih" target="_blank">Baca Selengkapnya</a>
+        </div>
+      </div>
+
+      <!-- Stats Item 4 -->
+      <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+        <div class="stats-item text-center p-4 rounded shadow-sm w-100" style="background-color: #f7fdfc;">
+          <div class="icon-wrapper mb-3">
+            <i class="bi bi-journal-richtext fs-2 text-white bg-success p-2 rounded-circle"></i>
+          </div>
+          <h3 class="fw-bold mb-2">
+            <span class="purecounter" 
+                data-purecounter-start="0" 
+                data-purecounter-end="370" 
+                data-purecounter-duration="1">
+            </span> Ton
+          </h3>
+          <p class="mb-0">Sampah di TPA DIY Piyungan</p>
+          <a href="https://www.kompas.id/baca/nusantara/2024/05/01/tpa-piyungan-tutup-permanen-tiga-daerah-di-diy-tak-bisa-lagi-kirim-sampah" target="_blank">Baca Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="mt-3 text-muted">Note: Dihitung per Hari</p>
+  </div>
+</section>
+<!-- /Stats Section -->
+    <!-- /Stats Section -->
+
 
     <!-- Clients Section 
     <section id="clients" class="clients section light-background">
@@ -528,7 +584,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>GALERI</h2>
-        <p><span>GALERI SAMPAH&nbsp;</span> <span class="description-title">DI YOGYAKARTA</span></p>
+        <p><span>Kondisi Sampah yang pernah terjadi&nbsp;</span> <span class="description-title">DI YOGYAKARTA</span></p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -538,99 +594,100 @@
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">Semua</li>
             <li data-filter=".filter-app">Organik</li>
-            <li data-filter=".filter-product">Non-Organik</li>
-            <li data-filter=".filter-branding">Limbah</li>
+            <li data-filter=".filter-product">Plastik</li>
+            <li data-filter=".filter-branding">Residu</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/galeri/organik/tampilkan-saya-sampah-organik.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/galeri/organik/sampah-organik1.jpeg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Organik</h4>
-                <p>sampah organik kulit pisang</p>
-                <a href="assets/img/galeri/organik/tampilkan-saya-sampah-organik.jpeg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <p>Gerakan Mbah Dirjo Kelola Sampah Organik Dari Rumah Tangga</p>
+                <a href="assets/img/galeri/organik/sampah-organik1.jpeg" title="Sampah-Organik 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://warta.jogjakota.go.id/detail/index/28384" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/galeri/non-organik/tampilkan-saya-sampah-non-organik.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/galeri/plastik/sampah-plastik1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Non Organik</h4>
-                <p>Sampah botol plastik</p>
-                <a href="assets/img/galeri/non-organik/tampilkan-saya-sampah-non-organik.jpeg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>Sampah Plastik</h4>
+                <p>Masalah Sampah di Yogyakarta Kompleks, Sulit Diolah Optimal Jika Tidak Dipilah di Rumah Tangga</p>
+                <a href="assets/img/galeri/plastik/sampah-plastik1.jpg" title="Sampah-limbah 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://jogja.tribunnews.com/2024/10/18/masalah-sampah-di-yogyakarta-kompleks-sulit-diolah-optimal-jika-tidak-dipilah-di-rumah-tangga" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/galeri/limbah/tampilkan-saya-sampah-limbah-besi-yang-tidak-terpakai.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/galeri/residu/sampah-residu1.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>limbah</h4>
-                <p>Limbah besi yang berkarat</p>
-                <a href="assets/img/galeri/limbah/tampilkan-saya-sampah-limbah-besi-yang-tidak-terpakai.jpeg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>residu</h4>
+                <p>Sampah: Dilema Yogya yang Tak Pernah Reda</p>
+                <a href="assets/img/galeri/residu/sampah-residu1.png" title="Sampah-residu 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://www.voaindonesia.com/a/sampah-dilema-yogya-yang-tak-pernah-reda-/6566605.html" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/galeri/organik/tampilkan-saya-sampah-organik-1.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/galeri/organik/sampah-organik2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Organik 2</h4>
-                <p>limbah buah buahan dan sayuran</p>
-                <a href="assets/img/galeri/organik/tampilkan-saya-sampah-organik-1.jpeg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <p>Rumah Kompos Nitikan Percontohan Pengelolaan Sampah</p>
+                <a href="assets/img/galeri/organik/sampah-organik2.jpg" title="Sampah-Organik 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://warta.jogjakota.go.id/detail/index/20802/rumah-kompos-nitikan-percontohan-pengelolaan-sampah-2022-05-10" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/galeri/non-organik/tampilkan-saya-sampah-non-organik-1.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/galeri/plastik/sampah-plastik2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Non Organik 2</h4>
-                <p>Sampah botol botol </p>
-                <a href="assets/img/galeri/non-organik/tampilkan-saya-sampah-non-organik-1.jpeg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>Sampah Plastik 2</h4>
+                <p>Mengurai Persoalan Sampah di Kota Yogyakarta, Hilir Sudah Berjalan Sesuai Jalur Tapi Hulu Masih Perlu Dikuatkan</p>
+                <a href="assets/img/galeri/plastik/sampah-plastik2.jpg" title="Sampah-limbah 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://jogja.suara.com/read/2024/12/13/114458/mengurai-persoalan-sampah-di-kota-yogyakarta-hilir-sudah-berjalan-sesuai-jalur-tapi-hulu-masih-perlu-dikuatkan" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/galeri/limbah/tampilkan-saya-sampah-limbah-seperti-baju-hasil-jaitan.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/galeri/residu/sampah-residu2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>limbah 2</h4>
-                <p>Baju hasil jaitan</p>
-                <a href="assets/img/galeri/limbah/tampilkan-saya-sampah-limbah-seperti-baju-hasil-jaitan.jpeg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>residu 2</h4>
+                <p>"60 Ton Sampah di Tiga TPST Kota Yogya Belum Terolah, Ini Penyebabnya", </p>
+                <a href="assets/img/galeri/residu/sampah-residu2.jpg" title="Sampah-residu 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://yogyakarta.kompas.com/read/2024/07/25/135735678/60-ton-sampah-di-tiga-tpst-kota-yogya-belum-terolah-ini-penyebabnya" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/galeri/organik/tampilkan-saya-sampah-organik-2.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/galeri/organik/sampah-organik3.webp" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Organik 3</h4>
-                <p>Sampah buah buahan</p>
-                <a href="assets/img/galeri/organik/tampilkan-saya-sampah-organik-2.jpeg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <p>Jogja Hadapi Lonjakan Sampah Pasca Lebaran, Ini Strategi Pemkot Atasi Tumpukan</p>
+                <a href="assets/img/galeri/organik/sampah-organik3.webp" title="Sampah Organik 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://jogja.suara.com/read/2025/04/09/193455/jogja-hadapi-lonjakan-sampah-pasca-lebaran-ini-strategi-pemkot-atasi-tumpukan#google_vignette"  target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/galeri/non-organik/tampilkan-saya-sampah-non-organik-2.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/galeri/plastik/sampah-plastik3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Non Organik 3</h4>
-                <p>Sampah kaleng bekas</p>
-                <a href="assets/img/galeri/non-organik/tampilkan-saya-sampah-non-organik-2.jpeg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>Sampah Plastik 3</h4>
+                <p>
+                  Artikel ini telah tayang di Kompas.com dengan judul "Persoalan Sampah di Yogyakarta Ditargetkan Kelar pada Juni 2024, Ini Solusinya..."</p>
+                <a href="assets/img/galeri/plastik/sampah-plastik3.jpg" title="Sampah-limbah 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://yogyakarta.kompas.com/read/2024/05/20/172927278/persoalan-sampah-di-yogyakarta-ditargetkan-kelar-pada-juni-2024-ini" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/galeri/limbah/tampilkan-saya-sampah-limbah-seperti-karet-gelang.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/galeri/residu/sampah-residu3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>limbah 3</h4>
-                <p>limbah hasil karet</p>
-                <a href="assets/img/galeri/limbah/tampilkan-saya-sampah-limbah-seperti-karet-gelang.jpeg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>residu 3</h4>
+                <p>Jogja Hadapi Lonjakan Sampah Pasca Lebaran, Ini Strategi Pemkot Atasi Tumpukan </p>
+                <a href="assets/img/galeri/residu/sampah-residu3.jpg" title="Sampah-residu 3" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://jogja.suara.com/read/2025/04/09/193455/jogja-hadapi-lonjakan-sampah-pasca-lebaran-ini-strategi-pemkot-atasi-tumpukan" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
@@ -645,11 +702,9 @@
 
 
     
-        <!-- <h2 style="text-align:center">Peta Sampah Kecamatan Yogyakarta</h2> -->
-        <h2 style="text-align: center;">Peta Penyebaran Sampah per Kecamatan di Yogyakarta</h2>
-    <!-- MAPS SAMPAH -->
-    <div id="map"></div>
-
+    <h2>Peta Penyebaran Sampah per Kecamatan di Yogyakarta</h2>
+    <div id="mapid"></div>
+    
 
 
 
@@ -772,6 +827,18 @@
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- AUDIO -->
+   <!-- Tombol Musik -->
+  <button id="musicBtn" class="btn btn-primary shadow">
+    <i id="musicIcon" class="bi bi-play-fill fs-3"></i>
+  </button>
+
+  <!-- Audio -->
+  <audio id="bgMusic" loop>
+    <source src="assets/audio/Gamelan sakral kanjeng Ratu pantai selatan.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
 
   <!-- Preloader -->
   <div id="preloader">
@@ -793,6 +860,8 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
   <script src="assets/js/data.js"></script>
   
 

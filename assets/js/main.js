@@ -246,3 +246,23 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }, 1500); // Tunggu sedikit agar PureCounter selesai menghitung
 });
+
+// MUSIC
+const musicBtn = document.getElementById('musicBtn');
+    const musicIcon = document.getElementById('musicIcon');
+    const bgMusic = document.getElementById('bgMusic');
+
+    let isPlaying = false;
+
+    musicBtn.addEventListener('click', () => {
+      if (!isPlaying) {
+        bgMusic.play();
+        musicIcon.classList.remove('bi-play-fill');
+        musicIcon.classList.add('bi-pause-fill');
+      } else {
+        bgMusic.pause();
+        musicIcon.classList.remove('bi-pause-fill');
+        musicIcon.classList.add('bi-play-fill');
+      }
+      isPlaying = !isPlaying;
+    });

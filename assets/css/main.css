@@ -2158,6 +2158,28 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+
+
+
+/*--------------------------------------------------------------
+# MUSIC Section Section
+--------------------------------------------------------------*/
+#musicBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 0.375rem; /* sesuai rounded-md */
+  background-color: #4CAF50; /* warna seperti contoh */
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#musicBtn:hover {
+  background-color: #45a049;
 }
